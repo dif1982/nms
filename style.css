@@ -1,0 +1,88 @@
+
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+html, body {
+   /* font-family: 'Roboto Condensed', sans-serif; */
+   font-family: 'Poppins', sans-serif;
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 5px;
+    
+}
+
+body{
+    background-image:
+    linear-gradient(to bottom, rgb(0, 0, 0, 1), rgba(133, 132, 132, 0.5)),
+    url('mns-painel.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    width: 80%;
+    height: 100vh;
+    background-size: cover;
+    color: white;
+    padding: 20px;
+    
+}
+
+.container {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+@media only screen and (max-device-width: 768px) {
+    .container {
+        margin-top: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+}
+
+h1, h2, h3, h4, h5, input, button {
+   /* font-family: 'Roboto Condensed', sans-serif !important; */
+    font-family: 'Poppins', sans-serif !important;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+input {
+  width: 100px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 1.5em;
+  border-width: 3px;
+  border-color: lightgreen;
+}
+
+.requirements td {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.heading {
+  font-weight: bold;
+}
+
+#msmr, #mbmr, #mtpcsr, #mtpcd, #mtpcss, #mtpcn, #mtpc, #mtsppsr, #mtsppd, #mtsppss, #mtsppn, #mtspp, #mtps, #mtpr, #mtpu, #mtpl,
+#asmr, #abmr, #atpcsr, #atpcd, #atpcss, #atpcn, #atpc, #atsppsr, #atsppd, #atsppss, #atsppn, #atspp, #atps, #atpr, #atpu, #atpl {
+  font-weight: bold;
+}
+
+#note {
+  border: 1px solid orange;
+  font-weight: bold;
+}
+
+.info, .info td {
+  text-align: center;
+  padding: 0px 10px;
+  border: 2px solid black;
+  border-collapse: collapse;
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Man's Sky - Calculadora de Painéis Solares / Baterias</title>
+    <link rel="icon" type="image/x-icon" href="nms.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2 class="page-header">No Man's Sky - Calculadora de Painéis Solares / Baterias</h2>
+        <label>Total Consumo de energia</label>
+        <input id="tpc" type="number" min="0" max="50000" value="">
+        <label>(kPs)</label>
+        <hr>
+        <hr>
+        <h3><u>Requerimentos:</u></h3>
+        <table class="requirements">
+        <tr>
+          <td></td>
+          <td class="heading">Mínimo</td>
+          <td class="heading">Ideal</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td>Paineis Solares: </td>
+          <td id="msmr"></td>
+          <td id="asmr"></td>
+        </tr>
+        <tr>
+          <td>Baterias: </td>
+          <td id="mbmr"></td>
+          <td id="abmr"></td>
+        </tr>
+        <tr>
+          <td><hr></td>
+          <td><hr></td>
+          <td><hr></td>
+         </tr>
+         <tr>
+          <td>Consumo Total de Energia / Nascer do sol: </td>
+          <td id="mtpcsr"></td>
+          <td id="atpcsr"></td>
+        </tr>
+        <tr>
+          <td>Consumo Total de Energia / Dia: </td>
+          <td id="mtpcd"></td>
+          <td id="atpcd"></td>
+        </tr>
+        <tr>
+          <td>Consumo Total de Energia / Por do sol: </td>
+          <td id="mtpcss"></td>
+          <td id="atpcss"></td>
+        </tr>
+        <tr>
+          <td>Consumo Total de Energia / Noite: </td>
+          <td id="mtpcn"></td>
+          <td id="atpcn"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td>Total: </td>
+          <td id="mtpc"></td>
+          <td id="atpc"></td>
+        </tr>
+        <tr>
+          <td><hr></td>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td>Energia Solar Total Produzida / Nascer do sol: </td>
+          <td id="mtsppsr"></td>
+          <td id="atsppsr"></td>
+        </tr>
+        <tr>
+          <td>Energia Solar Total Produzida / Dia: </td>
+          <td id="mtsppd"></td>
+          <td id="atsppd"></td>
+        </tr>
+        <tr>
+          <td>Energia Solar Total Produzida / Por do sol: </td>
+          <td id="mtsppss"></td>
+          <td id="atsppss"></td>
+        </tr>
+        <tr>
+          <td>Energia Solar Total Produzida / Noite: </td>
+          <td id="mtsppn"></td>
+          <td id="atsppn"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td>Total: </td>
+          <td id="mtspp"></td>
+          <td id="atspp"></td>
+        </tr>
+        <tr>
+          <td><hr></td>
+          <td><hr></td>
+          <td><hr></td>
+        </tr>
+        <tr>
+          <td>Energia total armazenada quando anoitece: </td>
+          <td id="mtps"></td>
+          <td id="atps"></td>
+        </tr>
+        <tr>
+          <td>Energia total necessária quando anoitece: </td>
+          <td id="mtpr"></td>
+          <td id="atpr"></td>
+        </tr>
+        <tr>
+          <td>Energia não usada: </td>
+          <td id="mtpu"></td>
+          <td id="atpu"></td>
+        </tr>
+        <tr>
+          <td>Perda de Energia: </td>
+          <td id="mtpl"></td>
+          <td id="atpl"></td>
+        </tr>
+        </table>
+        <br/>
+        <span id="note"></span>
+        <br>
+        <h3><b><u>Info:</u></b><br/></h3>
+        <p><b>NMS Version:</b> 2.42</p>
+        Com base no pior cenário em que o sol passa diretamente sobre a cabeça.
+        <table class="info">
+          <tr><td colspan=4><b>Dentro do jogo</b></td><td colspan=2><b>Tempo real</b></td></tr>
+          <tr><td>Nascer do sol</td><td>05:20 - 06:26</td><td>1h06m</td><td>66m</td><td>25 kPs</td><td>82.5s</td></tr>
+          <tr><td>Dia</td><td>06:26 - 17:34</td><td>11h08m</td><td>668m</td><td>50 kPs</td><td>835s</td></tr>
+          <tr><td>Por do sol</td><td>17:34 - 18:40</td><td>1h06m</td><td>66m</td><td>25 kPs</td><td>82.5s</td></tr>
+          <tr><td>Noite</td><td>18:40 - 05:20</td><td>10h40m</td><td>640m</td><td>0 kPs</td><td>800s</td></tr>
+        </table>
+        <p>
+        O melhor caso seria um local no planeta mais distante do sol. Isso - infelizmente - geralmente não corresponde às coordenadas dos pólos do planeta. No entanto, será sempre nascer / pôr do sol, com painéis solares funcionando a 50% (25kPs) durante todo o dia (24h no jogo / 1800s em tempo real). Nenhuma bateria seria necessária nesse caso.
+        </p>
+        <p><b>Criado por:</b> Devilin Pixy © - 8 de Junho de 2020</p>
+         <p><b>Traduzido por:</b> Francisco Guimarães © - 02 de Agosto de 2022</p>
+        <br/>
+    </div>
+</body>
+<script src="core.js"></script>
+</html>
